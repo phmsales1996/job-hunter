@@ -18,3 +18,9 @@ Fields:
 Indexes:
 - source
 - fetched_at
+
+Rules:
+- This table is append-only
+- No updates or deletes are allowed
+- Data here must never be modified after insertion
+- All transformations must write to derived tables
